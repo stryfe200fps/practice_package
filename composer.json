@@ -1,0 +1,38 @@
+{
+  "name": "adi/blogpackage",
+  "description": "This is the start of my supremacy",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+    "name": "Andrew Buragnit",
+    "email": "mobistyle35@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Adi\\Blogpackage\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Adi\\Blogpackage\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Adi\\Blogpackage\\BlogPackageServiceProvider"
+      ],
+      "aliases" : {
+        "Calculator": "Adi\\Blogpackage\\Facades\\Calculator"
+      }
+    }
+  },
+
+  "require-dev": {
+    "orchestra/testbench": "5.0",
+    "phpunit/phpunit": "^9.5"
+  }
+
+}
